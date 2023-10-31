@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link  rel="stylesheet" href="./calc.css">
+</head>
+<body>
+    <div class="calc-content">
+        <div class="flex-items-1">
+            <textarea id="display" placeholder="Enter"></textarea>
+            <div class="clear-btns">
+                <button id="clear" onclick="clearText()">CL</button>
+                <button id="clearWhole" onclick="clearWholeText()">AC</button>
+            </div>
+            
+        </div>
+        <div class="flex-items-2">
+            <div class="numbers">
+               <div class="numbers-row">
+                <button class="number" onclick="formExpression(9)">9</button>
+                <button class="number" onclick="formExpression(8)">8</button>
+                <button class="number" onclick="formExpression(7)">7</button>
+               </div>
+               <div class="numbers-row">
+                <button class="number" onclick="formExpression(6)">6</button>
+                <button class="number" onclick="formExpression(5)">5</button>
+                <button class="number" onclick="formExpression(4)">4</button>
+               </div>
+               <div class="numbers-row">
+                <button class="number" onclick="formExpression(3)">3</button>
+                <button class="number" onclick="formExpression(2)">2</button>
+                <button class="number" onclick="formExpression(1)">1</button>
+               </div>
+               <div class="numbers-row">
+                <button class="number" onclick="formExpression('.')">.</button>
+                <button class="number" onclick="formExpression(0)">0</button>
+                <button class="number" onclick="calculate()">=</button>
+               </div>
+            </div>
+            <div class="operators">
+                <button class="operator-btn" onclick="formExpression('+')">+</button>
+                <button class="operator-btn" onclick="formExpression('-')">-</button>
+                <button class="operator-btn" onclick="formExpression('/')">/</button>
+                <button class="operator-btn" onclick="formExpression('*')">*</button>
+            </div>
+        </div>
+    </div>
+    <script src="./calc.js"></script>
+</body>
+</html>

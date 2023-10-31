@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class romanNo {
     public static int romanToInt(String s) {
@@ -28,8 +29,9 @@ public class romanNo {
     }
 
     public static void main(String[] args) {
-        String romanNumeral = "IX";
-        int integerEquivalent = romanToInt(romanNumeral);
-        System.out.println(romanNumeral + " = " + integerEquivalent);
+        Scanner myObj = new Scanner(System.in);
+		String s=myObj.nextLine(); 
+        int integerEquivalent = romanToInt(s);
+        System.out.println(s + " = " + integerEquivalent);
     }
 }
